@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(9, 1, 18);
+  min-height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  gap: 20px;
+}
+
+.wrapper .container {
+  border: 1px solid grey;
+  margin: 3% 3% 0;
+  display: flex;
+  gap: 10px;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+  transition: align-items 2s linear;
+}
+
+.wrapper .container .box {
+  border: 1px solid greenyellow;
+  width: 10vw;
+  height: 10vw;
+}
+
+/* Align items */
+.wrapper .container.align_start {
+  align-items: flex-start;
+  /* transition: align-items 2s; */
+}
+.wrapper .container.align_center {
+  align-items: center;
+}
+.wrapper .container.align_end {
+  align-items: end;
+}
+
+/* Justify content */
+.wrapper .container.justify_center {
+  justify-content: center;
+}
+.wrapper .container.justify_space_between {
+  justify-content: space-between;
+}
+.wrapper .container.justify_space_around {
+  justify-content: space-around;
+}
+.wrapper .container.justify_space_evenly {
+  justify-content: space-evenly;
+}
+
+.wrapper .styles_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 0 3%;
+}
+.wrapper .styles_container .align_items,
+.justify_content {
+  border: none;
+
+}
+
+.wrapper .styles_container .align_items label:hover,
+.justify_content label:hover {
+    color: #fff;
+}
+
+.wrapper .styles_container .align_items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wrapper .styles_container .justify_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

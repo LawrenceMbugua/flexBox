@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <div class="styles_container">
+        <div class="align_items">
+          <h3>Align Items</h3>
+          <div class="inpt_container">
+            <input
+              type="radio"
+              value="align_start"
+              name="align_items"
+              id="start"
+            />
+            <label for="start">Start</label>
+          </div>
+          <div class="inpt_container">
+            <input
+              type="radio"
+              checked
+              value="align_center"
+              name="align_items"
+              id="align_center"
+            />
+            <label for="align_center">Center</label>
+          </div>
+
+          <div class="inpt_container">
+            <input type="radio" value="align_end" name="align_items" id="end" />
+            <label for="end">End</label>
+          </div>
+        </div>
+
+        <div class="justify_content">
+          <h3>Justify Content</h3>
+          <div class="inpt_container">
+            <input
+              type="radio"
+              value="justify_center"
+              name="justify_items"
+              id="justify_center"
+            />
+            <label for="justify_center">Center</label>
+          </div>
+
+          <div class="inpt_container">
+            <input
+              type="radio"
+              value="justify_space_between"
+              name="justify_items"
+              id="space_between"
+            />
+            <label for="space_between">Space-between</label>
+          </div>
+
+          <div class="inpt_container">
+            <input
+              type="radio"
+              value="justify_space_around"
+              name="justify_items"
+              id="space_around"
+            />
+            <label for="space_around">Space-around</label>
+          </div>
+
+          <div class="space_evenly">
+            <input
+              type="radio"
+              value="justify_space_evenly"
+              name="justify_items"
+              id="space_evenly"
+            />
+            <label for="space_evenly">Space-evenly</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
